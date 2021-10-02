@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 import json
 
 load_dotenv()
-database_path = 'postgresql://{{}/{}'.format(env['DB_HOST'], env['DB_NAME'])
+database_path = 'postgresql://{}/{}'.format(env['DB_HOST'], env['DB_NAME'])
 
 db = SQLAlchemy()
 
